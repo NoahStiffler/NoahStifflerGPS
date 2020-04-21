@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o6w-Vv-JcZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -10,7 +10,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NoahStifflerGPS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -20,16 +19,6 @@
                                 <rect key="frame" x="-207" y="-6" width="1604" height="902"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ9-Dc-l3x">
-                                <rect key="frame" x="242" y="756" width="152" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="rectangle.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="150"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BgS-Vf-6Yc" kind="presentation" modalPresentationStyle="fullScreen" id="FMj-ZP-vEs"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How close are you to the worlds largest toilet?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ud-Bg-wUw">
                                 <rect key="frame" x="20" y="96" width="374" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,22 +41,17 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qH3-wV-jnB">
-                                <rect key="frame" x="262" y="781" width="112" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="info.circle" catalog="system" selectedImage="info.circle.fill" id="3K7-KZ-eNL"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+            <point key="canvasLocation" x="-329" y="1831"/>
         </scene>
-        <!--GPSVC-->
+        <!--Item-->
         <scene sceneID="Nor-Y1-lwQ">
             <objects>
                 <viewController id="BgS-Vf-6Yc" customClass="GPSVC" customModule="NoahStifflerGPS" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,17 +83,6 @@
                                     <action selector="controlAction:" destination="BgS-Vf-6Yc" eventType="valueChanged" id="yuN-FP-X95"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jF9-di-6Q7">
-                                <rect key="frame" x="242" y="756" width="152" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="rectangle.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="150"/>
-                                </state>
-                                <connections>
-                                    <action selector="myUnwind:" destination="AaB-Gv-rDd" eventType="touchUpInside" id="tTH-Af-DnR"/>
-                                    <segue destination="AaB-Gv-rDd" kind="unwind" unwindAction="myUnwindWithUnwindSegue:" id="4de-16-fhE"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are currently" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxp-kA-Ggl">
                                 <rect key="frame" x="82" y="130" width="250" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -124,13 +97,6 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Go back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uE-37-H4K">
-                                <rect key="frame" x="268" y="781" width="101" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="1009px-Apple_logo_black.svg" translatesAutoresizingMaskIntoConstraints="NO" id="0LD-Pf-CJf">
                                 <rect key="frame" x="79" y="389" width="257" height="306"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -139,15 +105,94 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YQF-B5-I4D"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="mappin.circle" catalog="system" selectedImage="mappin.circle.fill" id="uPA-RE-SPG"/>
                     <connections>
                         <outlet property="controlOutlet" destination="kdy-qq-d8D" id="h47-GR-Nm5"/>
                         <outlet property="distanceLabel" destination="Wt6-oC-zex" id="IIO-Tz-iXB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npt-W6-ng7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="AaB-Gv-rDd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="850.72463768115949" y="193.52678571428569"/>
+            <point key="canvasLocation" x="400" y="1831"/>
+        </scene>
+        <!--web-->
+        <scene sceneID="hye-Sy-ZXe">
+            <objects>
+                <viewController id="6dn-eM-yjD" customClass="WebsiteVC" customModule="NoahStifflerGPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ZQ-Dj-AFG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="d6hihpd-c69838fd-7efb-46a2-9751-a357324ea02d" translatesAutoresizingMaskIntoConstraints="NO" id="wed-SO-9XS">
+                                <rect key="frame" x="-200" y="-6" width="1604" height="902"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-rh-w9e">
+                                <rect key="frame" x="295" y="745" width="119" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="rectangle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="85"/>
+                                </state>
+                                <connections>
+                                    <action selector="composeMessage:" destination="6dn-eM-yjD" eventType="touchUpInside" id="NUU-DE-yAm"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68c-bi-203">
+                                <rect key="frame" x="0.0" y="44" width="414" height="701"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="701" id="pj4-Ue-IPH"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNC-9m-9qA">
+                                <rect key="frame" x="332" y="768" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="68c-bi-203" firstAttribute="leading" secondItem="1KA-Um-ZzG" secondAttribute="leading" id="7m3-YA-YvJ"/>
+                            <constraint firstItem="68c-bi-203" firstAttribute="trailing" secondItem="1KA-Um-ZzG" secondAttribute="trailing" id="DkP-kg-KfT"/>
+                            <constraint firstItem="68c-bi-203" firstAttribute="top" secondItem="1KA-Um-ZzG" secondAttribute="top" id="VmH-XR-wir"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1KA-Um-ZzG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="web" image="link.circle" catalog="system" selectedImage="link.circle.fill" id="pnc-ED-wuK"/>
+                    <connections>
+                        <outlet property="webView" destination="68c-bi-203" id="LKf-8E-ugi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jKR-87-hVI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1147.8260869565217" y="1830.8035714285713"/>
+        </scene>
+        <!--Tab BarVC-->
+        <scene sceneID="uPp-qG-pG7">
+            <objects>
+                <tabBarController id="o6w-Vv-JcZ" customClass="TabBarVC" customModule="NoahStifflerGPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ppl-Tf-Qa0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="p3K-3W-ING"/>
+                        <segue destination="BgS-Vf-6Yc" kind="relationship" relationship="viewControllers" id="4Ow-l1-Mdh"/>
+                        <segue destination="6dn-eM-yjD" kind="relationship" relationship="viewControllers" id="fH5-tP-fUZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dgb-2w-0Ef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="1069"/>
         </scene>
     </scenes>
     <resources>
@@ -155,6 +200,12 @@
         <image name="1009px-Apple_logo_black.svg" width="1009" height="1198"/>
         <image name="5cf672a311e205334626ab19" width="2500" height="1250"/>
         <image name="d6hihpd-c69838fd-7efb-46a2-9751-a357324ea02d" width="3840" height="2160"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="link.circle" catalog="system" width="128" height="121"/>
+        <image name="link.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="mappin.circle" catalog="system" width="128" height="121"/>
+        <image name="mappin.circle.fill" catalog="system" width="128" height="121"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
     </resources>
 </document>

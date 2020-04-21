@@ -16,6 +16,8 @@
 		9E11329824350C6D00B6D24B /* NoahStifflerGPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E11329724350C6D00B6D24B /* NoahStifflerGPSTests.swift */; };
 		9E1132A324350C6D00B6D24B /* NoahStifflerGPSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1132A224350C6D00B6D24B /* NoahStifflerGPSUITests.swift */; };
 		9E1132B1243515C600B6D24B /* GPSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1132B0243515C600B6D24B /* GPSVC.swift */; };
+		9EA79CEB244F5ABB0025393B /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA79CEA244F5ABB0025393B /* TabBarVC.swift */; };
+		9EA79CED244F5F5D0025393B /* WebsiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA79CEC244F5F5D0025393B /* WebsiteVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		9E1132A224350C6D00B6D24B /* NoahStifflerGPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoahStifflerGPSUITests.swift; sourceTree = "<group>"; };
 		9E1132A424350C6D00B6D24B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E1132B0243515C600B6D24B /* GPSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSVC.swift; sourceTree = "<group>"; };
+		9EA79CEA244F5ABB0025393B /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		9EA79CEC244F5F5D0025393B /* WebsiteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				9E11328224350C6700B6D24B /* SceneDelegate.swift */,
 				9E11328424350C6700B6D24B /* ViewController.swift */,
 				9E11328624350C6700B6D24B /* Main.storyboard */,
+				9EA79CEC244F5F5D0025393B /* WebsiteVC.swift */,
+				9EA79CEA244F5ABB0025393B /* TabBarVC.swift */,
 				9E1132B0243515C600B6D24B /* GPSVC.swift */,
 				9E11328924350C6D00B6D24B /* Assets.xcassets */,
 				9E11328B24350C6D00B6D24B /* LaunchScreen.storyboard */,
@@ -264,6 +270,8 @@
 			files = (
 				9E11328524350C6700B6D24B /* ViewController.swift in Sources */,
 				9E1132B1243515C600B6D24B /* GPSVC.swift in Sources */,
+				9EA79CED244F5F5D0025393B /* WebsiteVC.swift in Sources */,
+				9EA79CEB244F5ABB0025393B /* TabBarVC.swift in Sources */,
 				9E11328124350C6700B6D24B /* AppDelegate.swift in Sources */,
 				9E11328324350C6700B6D24B /* SceneDelegate.swift in Sources */,
 			);

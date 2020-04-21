@@ -20,11 +20,6 @@ class GPSVC: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var distanceLabel: UILabel!
     
-    
-    
-
-    
-    
     @IBOutlet weak var controlOutlet: UISegmentedControl!
     
     @IBAction func controlAction(_ sender: Any) {
@@ -50,11 +45,11 @@ class GPSVC: UIViewController, CLLocationManagerDelegate {
             let apple:CLLocation = CLLocation(latitude: 37.334853, longitude: -122.009081)
             let diff:CLLocationDistance = apple.distance(from: newLocation)
             
-            if diff < 1{
+            if diff < 1 {
                 locMan.stopUpdatingLocation()
                 distanceLabel.text = "You have arrived at the Worlds Largest Toilet™"
             }
-            else{
+            else {
                 let commaDelimited: NumberFormatter = NumberFormatter()
                 commaDelimited.numberStyle = NumberFormatter.Style.decimal
                 
@@ -66,14 +61,9 @@ class GPSVC: UIViewController, CLLocationManagerDelegate {
                 finalImp = commaDelimited.string(from: NSNumber(value: (diff/1609)))!
                 }
                     
-              
             }
             
         }
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         locMan.delegate = self
@@ -83,8 +73,5 @@ class GPSVC: UIViewController, CLLocationManagerDelegate {
         userLocation = nil
         
     }
-    
-
-   
 
 }
