@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NoahStifflerGPS" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,13 +45,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="info.circle" catalog="system" selectedImage="info.circle.fill" id="3K7-KZ-eNL"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="info.circle" catalog="system" selectedImage="info.circle.fill" id="3K7-KZ-eNL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-329" y="1831"/>
         </scene>
-        <!--Item-->
+        <!--Distance-->
         <scene sceneID="Nor-Y1-lwQ">
             <objects>
                 <viewController id="BgS-Vf-6Yc" customClass="GPSVC" customModule="NoahStifflerGPS" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,7 +105,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YQF-B5-I4D"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="mappin.circle" catalog="system" selectedImage="mappin.circle.fill" id="uPA-RE-SPG"/>
+                    <tabBarItem key="tabBarItem" title="Distance" image="mappin.circle" catalog="system" selectedImage="mappin.circle.fill" id="uPA-RE-SPG"/>
                     <connections>
                         <outlet property="controlOutlet" destination="kdy-qq-d8D" id="h47-GR-Nm5"/>
                         <outlet property="distanceLabel" destination="Wt6-oC-zex" id="IIO-Tz-iXB"/>
@@ -115,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="400" y="1831"/>
         </scene>
-        <!--web-->
+        <!--More-->
         <scene sceneID="hye-Sy-ZXe">
             <objects>
                 <viewController id="6dn-eM-yjD" customClass="WebsiteVC" customModule="NoahStifflerGPS" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,7 +166,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1KA-Um-ZzG"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="web" image="link.circle" catalog="system" selectedImage="link.circle.fill" id="pnc-ED-wuK"/>
+                    <tabBarItem key="tabBarItem" title="More" image="link.circle" catalog="system" selectedImage="link.circle.fill" id="pnc-ED-wuK"/>
                     <connections>
                         <outlet property="webView" destination="68c-bi-203" id="LKf-8E-ugi"/>
                     </connections>
